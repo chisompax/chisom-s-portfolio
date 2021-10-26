@@ -1,0 +1,182 @@
+@import "./scss/bootstrap.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 13px;
+  @media screen and (min-width: 768px) {
+    font-size: 15px;
+    background-color: #FAF6F6;
+  }
+  .mono {
+    font-family: PT Mono;
+    font-size: 50px;
+    @media screen and (max-width: 768px) {
+      font-size: 36px;
+    }
+  }
+  .roboto {
+    font-family: Roboto;
+    font-size: 18px;
+    @media screen and (max-width: 768px) {
+      font-size: 15px;
+    }
+  }
+}
+
+.header {
+  background-image: url(/assets/home.png);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .nav-item {
+    font-size: 25px;
+    font-family: Roboto;
+    @media screen and (max-width: 768px) {
+      font-size: 15px;
+    }
+  }
+  .wrapper {
+    display: flex;
+
+    align-items: center;
+    position: relative;
+    .salim {
+      &-image {
+        width: 100%;
+      }
+    }
+    .text-content {
+      p {
+        font-family: PT Mono;
+      }
+
+      position: absolute;
+      right: 0;
+      .bum {
+        padding-bottom: 1rem;
+      }
+      @media screen and (min-width: 768px) {
+        top: 35%;
+        right: 0;
+        width: 50%;
+
+        .bum {
+          text-align: right;
+        }
+      }
+      @media screen and (max-width: 1000px) {
+        background-color: rgba(128, 128, 128, 0.461);
+      }
+    }
+  }
+}
+.about {
+  position: relative;
+  // background-color: red;
+  // width:40rem ;
+
+  &-wrapper {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    p {
+      font-family: PT mono;
+    }
+  }
+  .up-arrow {
+    position: absolute;
+    top: 87%;
+    right: 5%;
+  }
+}
+.projects{
+    margin-top: 8rem;
+    .youtube-wrapper {
+        display: flex;
+        margin: auto;
+        .youtube-clone{
+          //   background-color: red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                font-family: Roboto;
+            }
+            
+        }
+        
+        @media screen and (max-width: 1000px) {
+          display: block;
+          img{
+              max-width: 100%;
+          }
+        }
+      }
+      
+}
+.up-arrow{
+    .view{
+        // background-color: blue;
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: roboto;
+        font-size: 30px; 
+        
+
+    }
+    position: relative;
+    img{
+        position: absolute;
+        top: 25%;
+        right: 5%;
+    }
+}
+.contact{
+    // background-color: red;
+    margin-top: 8rem;
+    p{
+        font-family: PT Mono;
+        font-size: 16px;
+    }
+    form{
+        max-width: 100%;
+        width: 27rem;
+        @media screen and (max-width:768px){
+            max-width: 100%;
+        }
+        
+        .form-control{
+            border-radius: 10px;
+            background-color: #fff;
+        }
+        
+    }
+    
+    .btn{
+        position: relative;
+        // background-color: green;
+        height: 4rem;
+
+        img{
+            position: absolute;
+            top: 5%;
+            right: 5%;
+        }
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        button{
+            width: 29rem;
+            border-radius: 10px;
+        
+        }
+        
+    }
+}
