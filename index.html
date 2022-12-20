@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/styles/scss/bootstrap.css" />
 
     <link rel="stylesheet" href="/styles/fontawesome/css/all.css" />
-    <title>Document</title>
+    <title>Chisom's Portfolio</title>
   </head>
   <body>
     <header class="header">
@@ -35,31 +35,35 @@
             </li>
           </ul>
           <ul class="nav">
-            <li class="nav-link">
-              <i class="fab fa-facebook-f"></i>
+            <li class="nav-link ">
+              <a class=" text-dark" href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+              
             </li>
-            <li class="nav-link">
-              <i class="fab fa-spotify"></i>
+            <li class="nav-link ">
+              <a class=" text-dark" href="https://github.com/chisompax"><i class="fab fa-github"></i></a>
+              
             </li>
-            <li class="nav-link">
-              <i class="fab fa-instagram"></i>
+            <li class="nav-link ">
+              <a class=" text-dark" href="https://www.linkedin.com/in/chisom-ugwu-60b7a3194/"><i class="fab fa-linkedin"></i></a>
+              
             </li>
+            
           </ul>
         </div>
       </nav>
       <div class="wrapper">
         <div class="salim">
-          <img class="salim-image" src="/assets/Salim`s image.png" alt="" />
+          <img class="salim-image" src="/assets/IMG_20210428_155426_662.jpeg" alt="" />
         </div>
 
         <div class="container text-content">
-          <div class="text-content-2">
+          <div class="text-content-two">
             <h1 class="mono">Hi,</h1>
-            <h1 class="mono">Iam Salim Muradi</h1>
-            <p>A Multi talented software developer</p>
+            <h1 class="mono">I'm Chisom</h1>
+            <p>A Front end Web developer</p>
           </div>
           <div class="bum">
-            <button class="btn roboto btn-dark">Download My Resume</button>
+            <button class="btn roboto btn-dark"><a class=" text-light" href="/assets/chisom-resume.pdf">View My Resume</a></button>
           </div>
         </div>
       </div>
@@ -68,17 +72,16 @@
       <div class="about-wrapper text-center">
         <h1 class="mono">About</h1>
         <p class="mt-5">
-          <p>Hi, Iam Salim Muradi a multi talented software engineer </p>
-          <p>I am currently a student at Kabul University.</p>
+          <p>Hi, My name is Chisom Ugwu, a front-end web developer. </p>
+          <p>I live in Port Harcourt Nigeria.</p>
            <p>
-            Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Eos eum laborum dolore est ad
-            perferendis harum nulla possimus, nemo nihil, ea dolores illum
-            repudiandae eveniet aliquid quisquam hic labore, officiis quibusdam
-            voluptatem quidem mollitia dolor? Quaerat eveniet distinctio illum
-            animi ad deleniti, debitis quia cum, explicabo ipsum, nihil mollitia
+              My journey into tech started with Graphic design which eventually evolved to a little stint in UI/UX.
+               UI/UX exposed me to the world of front-end development which i have developed a great passion for this past year. 
+               I'm always excited to learn more about new technologies and how to use them. 
+               Would you like to know more about me and what i do?
            </p>
-          <p>
+          <!-- <p>Lorem ipsum dolor sit amet
+            con
             adipi Incidunt laboriosam explicabo nam ad expedita sed corporis
           itaque fugiat quos accusantium! Repellendus iure enim aut fugit,
           laudantium cumque, voluptates vero nihil porro suscipit quos illo fuga
@@ -98,20 +101,49 @@
           iste amet quisquam repudiandae aperiam, aliquam fugit corrupti
           debitis, eius aut qui recusandae soluta provident? Voluptatibus id
           laborum dolore, repellendus architecto.
-          </p>
+          </p> -->
         </p>
-        <button class="btn roboto btn-dark mt-5 mb-5">Hire Me</button>
+        <button class="btn roboto btn-dark mt-3 mb-4"><a class=" text-light" href="/assets/chisom-resume.pdf">View My Resume</a></button>
       </div>
-       <div class="up-arrow">
+       <!-- <div class="up-arrow">
          <a href="#home"><img src="/assets/Union.svg" alt=""></a>
-       </div>
+       </div> -->
 
     </div>
 
     <div id="projects" class="projects container">
       <h1 class="mono text-center mt-5 mb-5">Projects</h1>
       <div class="youtube-wrapper mt-5 mb-5">
-        <img src="/assets/you.png" alt="">
+        <img class="anime-img" src="/assets/bdmis.png" alt="" id="div1">
+        <div class="youtube-clone anime" id="div2">
+          <h3>Brighter Dawn Montessori International School</h3>
+          <p class="mono-text">
+
+            bdmis.org is an EdTech website with a lot of functionalities. 
+            I was tasked to work on the front-end and I used
+             resources like strapi CMS, Graphql, bootstrap and more.
+          </p>
+          <p ><a class="text-dark roboto " href="https://www.bdmis.org/">Visit Site<i class="fa fa-external-link  mx-2" aria-hidden="true"></i></a></p>
+        </div>
+      </div>
+      <div class="youtube-wrapper">
+        <div class="youtube-clone anime" id="div3">
+          <h3>Helar (Electronic Law Reports)</h3>
+          <p class="mono-text">
+            Helar has been one of the most ambitious and career changing
+            websites I've been opportuned to work on. From working as a content editor
+            to eventually working as part of the front-end team. Helar contains 
+            over 1000 Law Reports, Practice and study notes that offer practicing
+            lawyers, law students and other subscibers quick access to the principles of law. 
+          </p>
+          <p ><a class="text-dark roboto " href="https://www.helar.law/">Visit Site<i class="fa fa-external-link  mx-2" aria-hidden="true"></i></a></p>
+        </div>
+        <img class="anime-img " src="/assets/helar.png" alt="" id="div4">
+        
+      </div>
+
+      <!-- <div class="youtube-wrapper mt-5 mb-5">
+        <img src="/assets/purity.png" alt="">
         <div class="youtube-clone">
           <h2>Youtube Clone</h2>
           <p class="roboto">
@@ -132,32 +164,36 @@
           </p>
           <p><a class="text-dark" href="#">See More...</a></p>
         </div>
-        <img src="/assets/you.png" alt="">
+        <img src="/assets/kigoma.png" alt="">
         
-      </div>
+      </div> -->
       
 
     </div>
     <div class="up-arrow mb-5">
       <div class="view text-center">
-        <p><a class="text-dark " href="#">View All Projects...</a></p>
+        <h3><a class="text-dark " href="/projects.html">View All Projects...</a></h3>
         </div>
-      <a href="#about"><img src="/assets/Union.svg" alt=""></a>
+      <!-- <a href="#about"><img src="/assets/Union.svg" alt=""></a> -->
     </div>
 
     <div id="contact" class="contact">
-      <h1 class="mono text-center mt-5 mb-5">Contact Me</h1>
-      <p class="text-center">Get intouch with me I will respond within a day</p>
-      <div class="fr d-flex justify-content-center">
+      <h1 class="mono text-center  mb-5">Contact Me</h1>
+      <p class="text-center">Get intouch with me and I'll respond as soon as I can</p>
+
+      <div class=" d-flex justify-content-center">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeXZYvZJCQohPPzvmXsBg7kWFi-GseqlBrMZz8uc52yYpmueA/viewform?embedded=true" width="640" height="677" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+      <!-- <div class="fr d-flex justify-content-center">
         <form action="" class="form" >
           <div class="form-group row">
             <label  class="col-form-label"></label>
-            <input type="text" placeholder="Name" class="form-control">
+            <input type="text" placeholder="Name" id="name" class="form-control">
             
           </div>
           <div class="form-group row">
             <label  class="col-form-label"></label>
-            <input type="email" placeholder="Email" class="form-control">
+            <input type="email" placeholder="Email" id="email" class="form-control">
           </div>
             <div class="form-group row">
               <label aria-placeholder="body" class="col-form-label"></label>
@@ -168,14 +204,15 @@
         </form>
         <div class="btn">
           <button class="btn-dark">Send</button>
-          <a href="#projects"><img src="/assets/Union.svg" alt=""></a>
+          
         </div>
-      </div>
+      </div> -->
     </div>
 
 
     
 
     <script src="https://use.fontawesome.com/4dd1f4acb9.js"></script>
+    <script src="/sandbox.js"></script>
   </body>
 </html>

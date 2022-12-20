@@ -10,6 +10,8 @@ body {
     font-size: 15px;
     background-color: #FAF6F6;
   }
+
+  
   .mono {
     font-family: PT Mono;
     font-size: 50px;
@@ -24,7 +26,18 @@ body {
       font-size: 15px;
     }
   }
+
+  .mono-text{
+    font-family: PT Mono;
+    font-size: 15px;
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+    }
+    margin-right: 2rem;
+  }
 }
+
+
 
 .header {
   background-image: url(/assets/home.png);
@@ -39,6 +52,7 @@ body {
       font-size: 15px;
     }
   }
+  
   .wrapper {
     display: flex;
 
@@ -53,11 +67,32 @@ body {
       p {
         font-family: PT Mono;
       }
-
+       //background-color: green;
       position: absolute;
-      right: 0;
+       right: 0;
+       height: 30rem;
       .bum {
-        padding-bottom: 1rem;
+        //padding-bottom: 1rem;
+        //background-color: red;
+        height: 4rem;
+        width: 27rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        .btn{
+          position: relative;
+        animation-name: button;
+        animation-duration: 4s;
+        animation-delay: -2s;
+        animation-iteration-count: 2;
+        }
+      }
+      @keyframes button {
+        0%   {background-color: gray; left:0px; top:0px;}
+        25%  {background-color: orange; left:200px; top:0px;}
+        50%  {background-color: palegoldenrod; left:200px; top:200px;}
+        75%  {background-color: rosybrown; left:0px; top:200px;}
+        100% {background-color: gray; left:0px; top:0px;}
       }
       @media screen and (min-width: 768px) {
         top: 35%;
@@ -70,14 +105,30 @@ body {
       }
       @media screen and (max-width: 1000px) {
         background-color: rgba(128, 128, 128, 0.461);
+        height: 15rem;
+        
+      }
+
+      &-two{
+        //background-color: blue;
+        margin-left: 12rem;
+        @media screen and (max-width: 1000px) {
+          margin-left: 0;
+        }
       }
     }
   }
 }
+
+
 .about {
   position: relative;
   // background-color: red;
   // width:40rem ;
+
+  .up-arrow{
+    position: sticky;
+  }
 
   &-wrapper {
     width: 100%;
@@ -93,6 +144,13 @@ body {
     right: 5%;
   }
 }
+.nav-item-project{
+  font-size: 25px;
+  font-family: Roboto;
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+  }
+} 
 .projects{
     margin-top: 8rem;
     .youtube-wrapper {
@@ -103,12 +161,40 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            
             h2{
                 font-family: Roboto;
             }
             
         }
+        .anime{
+          position: relative;
+            animation: mymove 5s 3;
+        }
         
+        .anime-img{
+          position: relative;
+            animation: mymove 5s 3;
+        }
+         
+        #div1{
+          animation-timing-function: ease;
+        }
+        #div2{
+          animation-timing-function: linear;
+        }
+        #div3{
+          animation-timing-function: linear;
+        }
+        #div4{
+          animation-timing-function: linear;
+        }
+        
+        @keyframes mymove {
+          from{left:0px;}
+          to{left: 300px;}
+        }
+
         @media screen and (max-width: 1000px) {
           display: block;
           img{
@@ -116,7 +202,17 @@ body {
           }
         }
       }
-      
+    .project-btn{
+      // background-color: red;
+      display: flex;
+      justify-content: center;
+      .btn{
+        width: 10rem;
+      }
+    } 
+  
+    
+
 }
 .up-arrow{
     .view{
@@ -139,7 +235,7 @@ body {
 }
 .contact{
     // background-color: red;
-    margin-top: 8rem;
+    margin-top: 5rem;
     p{
         font-family: PT Mono;
         font-size: 16px;

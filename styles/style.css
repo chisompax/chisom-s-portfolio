@@ -10855,6 +10855,18 @@ body .roboto {
   }
 }
 
+body .mono-text {
+  font-family: PT Mono;
+  font-size: 15px;
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  body .mono-text {
+    font-size: 12px;
+  }
+}
+
 .header {
   background-image: url(/assets/home.png);
   min-height: 100vh;
@@ -10898,6 +10910,7 @@ body .roboto {
 .header .wrapper .text-content {
   position: absolute;
   right: 0;
+  height: 30rem;
 }
 
 .header .wrapper .text-content p {
@@ -10905,7 +10918,85 @@ body .roboto {
 }
 
 .header .wrapper .text-content .bum {
-  padding-bottom: 1rem;
+  height: 4rem;
+  width: 27rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header .wrapper .text-content .bum .btn {
+  position: relative;
+  -webkit-animation-name: button;
+          animation-name: button;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+
+@-webkit-keyframes button {
+  0% {
+    background-color: gray;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: orange;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: palegoldenrod;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: rosybrown;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: gray;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes button {
+  0% {
+    background-color: gray;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: orange;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: palegoldenrod;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: rosybrown;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: gray;
+    left: 0px;
+    top: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -10922,11 +11013,27 @@ body .roboto {
 @media screen and (max-width: 1000px) {
   .header .wrapper .text-content {
     background-color: rgba(128, 128, 128, 0.461);
+    height: 15rem;
+  }
+}
+
+.header .wrapper .text-content-two {
+  margin-left: 12rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .header .wrapper .text-content-two {
+    margin-left: 0;
   }
 }
 
 .about {
   position: relative;
+}
+
+.about .up-arrow {
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .about-wrapper {
@@ -10943,6 +11050,17 @@ body .roboto {
   position: absolute;
   top: 87%;
   right: 5%;
+}
+
+.nav-item-project {
+  font-size: 25px;
+  font-family: Roboto;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-item-project {
+    font-size: 15px;
+  }
 }
 
 .projects {
@@ -10973,6 +11091,56 @@ body .roboto {
   font-family: Roboto;
 }
 
+.projects .youtube-wrapper .anime {
+  position: relative;
+  -webkit-animation: mymove 5s 3;
+          animation: mymove 5s 3;
+}
+
+.projects .youtube-wrapper .anime-img {
+  position: relative;
+  -webkit-animation: mymove 5s 3;
+          animation: mymove 5s 3;
+}
+
+.projects .youtube-wrapper #div1 {
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.projects .youtube-wrapper #div2 {
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.projects .youtube-wrapper #div3 {
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.projects .youtube-wrapper #div4 {
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 300px;
+  }
+}
+
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 300px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .projects .youtube-wrapper {
     display: block;
@@ -10980,6 +11148,19 @@ body .roboto {
   .projects .youtube-wrapper img {
     max-width: 100%;
   }
+}
+
+.projects .project-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects .project-btn .btn {
+  width: 10rem;
 }
 
 .up-arrow {
@@ -11008,7 +11189,7 @@ body .roboto {
 }
 
 .contact {
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 
 .contact p {
